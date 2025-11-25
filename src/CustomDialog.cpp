@@ -10,9 +10,17 @@ CustomDialog::CustomDialog(const QString &title, const QString &message, QWidget
 
     ui->title->setText(title);
     ui->message->setText(message);
+
+    connect(ui->pushButton_understand, &QPushButton::clicked,
+            this, &CustomDialog::onPushButtonUnderstandClicked);
 }
 
 CustomDialog::~CustomDialog()
 {
     delete ui;
+}
+
+void CustomDialog::onPushButtonUnderstandClicked()
+{
+    this->close();
 }

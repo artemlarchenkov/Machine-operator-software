@@ -2,6 +2,7 @@
 #include "ui_FrameBottom.h"
 #include <QMessageBox>
 #include "CustomDialog.h"
+#include <QTimer>
 
 FrameBottom::FrameBottom(QWidget *parent) :
     QFrame(parent),
@@ -30,36 +31,41 @@ FrameBottom::~FrameBottom()
 void FrameBottom::OnButtomStopMotorsClicked(bool _state)
 {
     Q_UNUSED(_state)
-
-    CustomDialog dlg("Движение остановлено",
-                     "Движение моторов осей перемещения остановлены вручную");
-    dlg.exec();
+    QTimer::singleShot(5000, [](){
+        CustomDialog dlg("Движение остановлено",
+                         "Движение моторов осей перемещения остановлены вручную");
+                dlg.exec();
+    });
 }
 
 void FrameBottom::OnButtonDoorClicked(bool _state)
 {
     Q_UNUSED(_state)
-
-    CustomDialog dlg("Дверь камеры",
-                     "Дверь камеры открыта/закрыта");
-    dlg.exec();
+    QTimer::singleShot(5000,[](){
+        CustomDialog dlg("Дверь камеры",
+                         "Дверь камеры открыта/закрыта");
+        dlg.exec();
+    });
 }
 
 void FrameBottom::OnButtonDoorPerchatkaClicked(bool _state)
 {
     Q_UNUSED(_state)
-
-    CustomDialog dlg("Дверь перчатки",
-                     "Дверь перчатки открыта/закрыта");
-    dlg.exec();
+    QTimer::singleShot(5000,[](){
+        CustomDialog dlg("Дверь перчатки",
+                         "Дверь перчатки открыта/закрыта");
+        dlg.exec();
+    });
 }
 
 void FrameBottom::OnButtonDoorCameraClicked(bool _state)
 {
     Q_UNUSED(_state)
 
-    CustomDialog dlg("Освещение камеры",
-                     "Освещение камеры включено/выключено");
-    dlg.exec();
+    QTimer::singleShot(5000, [](){
+        CustomDialog dlg("Освещение камеры",
+                         "Освещение камеры включено/выключено");
+        dlg.exec();
+    });
 }
 

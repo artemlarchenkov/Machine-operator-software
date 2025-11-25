@@ -15,7 +15,7 @@
         <file>icon_button_right_3.png</file>
         <file>icon_close.png</file>
         <file>icon_lamp_spark.png</file>
-        <file>icon thickness.png</file>
+        <file>icon_thickness.png</file>
         <file>image_language.png</file>
         <file>info-information.png</file>
         <file>lock.png</file>
@@ -23,5 +23,7 @@
         <file>resource.qrc</file>
         <file>server connection.png</file>
         <file>server connection1.png</file>
+        <file>iconbutton_left.png</file>
+        <file>iconbutton_left2.png</file>
     </qresource>
 </RCC>
