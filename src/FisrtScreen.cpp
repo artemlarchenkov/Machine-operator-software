@@ -10,7 +10,6 @@ FisrtScreen::FisrtScreen(QWidget *parent) :
     ui->frame_MainImage->setObjectName("Image_First_Screen");
     ui->frame_MainImage->setStyleSheet("");
     ui->frame_MainImage->setFixedSize(972, 688);
-
 }
 
 FisrtScreen::~FisrtScreen()

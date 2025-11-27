@@ -14,11 +14,6 @@ QFrame#frame_header_2{
     background-image: url(:/Frame_header2.png) no-repeat center center fixed;
 }
 
-/*QFrame#frame_firstScreen{
-    color: White;
-    background-color: #F5F5F5;
-}*/
-
 QLabel#label_header {
     background-color: Black;
     color: White;
@@ -54,33 +49,3 @@ QFrame#frame_buttom QPushButton#button_stop_motors{
     background-color: #8B66E8;
     color: white;
 }
-
-/*QFrame#frameLabelAP[hover="false"]{
-    background-color: #3c4151;
-    border: #3c4151;
-    color: #3c4151;
-    font: Terminus;
-}
-QFrame#frameLabelAP[hover="true"]{
-    border: 1px solid #D3D3D3;
-    background-color: #D3D3D3;
-    color: #D3D3D3;
-    font-family: Terminus;
-}*/
-/*QMainWindow#frame_MainWindow{
-    border: #D3D3D3;
-    background-color: #D3D3D3;
-}
-
-QFrame#frameLabelAP[hover="false"]{
-    background-color: #3c4151;
-    border: #3c4151;
-    color: #3c4151;
-    font: Terminus;
-}
-QFrame#frameLabelAP[hover="true"]{
-    border: 1px solid #D3D3D3;
-    background-color: #D3D3D3;
-    color: #D3D3D3;
-    font-family: Terminus;
-}*/

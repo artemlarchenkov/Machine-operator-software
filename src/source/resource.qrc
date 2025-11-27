@@ -25,5 +25,6 @@
         <file>server connection1.png</file>
         <file>iconbutton_left.png</file>
         <file>iconbutton_left2.png</file>
+        <file>icon_Arrow_backspase.png</file>
     </qresource>
 </RCC>
