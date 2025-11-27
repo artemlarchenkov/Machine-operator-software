@@ -307,7 +307,7 @@
                 </widget>
                </item>
                <item row="1" column="0">
-                <widget class="QLineEdit" name="lineEdit_2">
+                <widget class="KeypadLineEdit" name="lineEdit_2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -389,6 +389,9 @@
                    <height>56</height>
                   </size>
                  </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="styleSheet">
                   <string notr="true">color: rgb(255, 255, 255);
 background-color : #81869F
@@ -413,9 +416,18 @@ background-color : #81869F
                    <height>56</height>
                   </size>
                  </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="styleSheet">
-                  <string notr="true">color: rgb(255, 255, 255);
-background-color: #8B66E8;</string>
+                  <string notr="true">QPushButton {
+	background-color:  #8B66E8;
+border-color: #8B66E8;
+color: white;}
+QPushButton:pressed {
+	background-color: #DDD2F9;
+	color: #4D505F;
+}</string>
                  </property>
                  <property name="text">
                   <string>Сброс</string>
@@ -429,6 +441,9 @@ background-color: #8B66E8;</string>
                    <width>202</width>
                    <height>56</height>
                   </size>
+                 </property>
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">color: rgb(255, 255, 255);
@@ -811,11 +826,14 @@ background-color : #81869F
                        </property>
                        <property name="font">
                         <font>
-                         <pointsize>14</pointsize>
+                         <pointsize>19</pointsize>
                         </font>
                        </property>
                        <property name="styleSheet">
                         <string notr="true">background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="inputMask">
+                        <string/>
                        </property>
                        <property name="text">
                         <string>0.000</string>
@@ -878,10 +896,20 @@ background-color : #81869F
                          <height>56</height>
                         </size>
                        </property>
+                       <property name="focusPolicy">
+                        <enum>Qt::NoFocus</enum>
+                       </property>
                        <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);
-background-color : #81869F
-</string>
+                        <string notr="true">QPushButton {
+	background-color:  #81869F;
+	border-color: #81869F;
+	color: white;
+}
+QPushButton:pressed {
+	background-color: #E6E7EC;
+	color: #81869F;
+
+}</string>
                        </property>
                        <property name="text">
                         <string>Отсыпать</string>
@@ -956,10 +984,20 @@ background-color : #81869F
                       <height>56</height>
                      </size>
                     </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(255, 255, 255);
-background-color : #81869F
-</string>
+                     <string notr="true">QPushButton {
+	background-color:  #81869F;
+	border-color: #81869F;
+	color: white;
+}
+QPushButton:pressed {
+	background-color: #E6E7EC;
+	color: #81869F;
+
+}</string>
                     </property>
                     <property name="text">
                      <string>Выгрузить порошок</string>
@@ -980,9 +1018,18 @@ background-color : #81869F
                       <height>56</height>
                      </size>
                     </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(255, 255, 255);
-background-color: #8B66E8;</string>
+                     <string notr="true">QPushButton {
+	background-color:  #8B66E8;
+border-color: #8B66E8;
+color: white;}
+QPushButton:pressed {
+	background-color: #DDD2F9;
+	color: #4D505F;
+}</string>
                     </property>
                     <property name="text">
                      <string>Сброс</string>
@@ -1359,6 +1406,9 @@ background-color: #8B66E8;</string>
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
                     <property name="styleSheet">
                      <string notr="true">color: rgb(255, 255, 255);
 background-color : #81869F
@@ -1408,31 +1458,6 @@ background-color : #81869F
                <property name="bottomMargin">
                 <number>0</number>
                </property>
-               <item row="0" column="0">
-                <widget class="QFrame" name="frame_14">
-                 <property name="minimumSize">
-                  <size>
-                   <width>36</width>
-                   <height>36</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>36</width>
-                   <height>36</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true"> background-image: url(:/Group.png) no-repeat center center fixed;</string>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::NoFrame</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                </widget>
-               </item>
                <item row="0" column="1">
                 <widget class="QLabel" name="label_7">
                  <property name="sizePolicy">
@@ -1471,6 +1496,44 @@ background-color : #81869F
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QFrame" name="frame_14">
+                 <property name="minimumSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>36</width>
+                   <height>36</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true"> background-image: url(:/Group.png) no-repeat center center fixed;</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
                </item>
               </layout>
              </widget>
@@ -1637,12 +1700,21 @@ background-color : #81869F
                       <height>56</height>
                      </size>
                     </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
                     <property name="layoutDirection">
                      <enum>Qt::RightToLeft</enum>
                     </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(255, 255, 255);
-background-color: #8B66E8;</string>
+                     <string notr="true">QPushButton {
+	background-color:  #8B66E8;
+border-color: #8B66E8;
+color: white;}
+QPushButton:pressed {
+	background-color: #DDD2F9;
+	color: #4D505F;
+}</string>
                     </property>
                     <property name="text">
                      <string>Сброс</string>
@@ -1663,10 +1735,20 @@ background-color: #8B66E8;</string>
                       <height>16777215</height>
                      </size>
                     </property>
+                    <property name="focusPolicy">
+                     <enum>Qt::NoFocus</enum>
+                    </property>
                     <property name="styleSheet">
-                     <string notr="true">color: rgb(255, 255, 255);
-background-color : #81869F
-</string>
+                     <string notr="true">QPushButton {
+	background-color:  #81869F;
+	border-color: #81869F;
+	color: white;
+}
+QPushButton:pressed {
+	background-color: #E6E7EC;
+	color: #81869F;
+
+}</string>
                     </property>
                     <property name="text">
                      <string>Положение отсыпки</string>
@@ -2007,6 +2089,13 @@ background-color : #81869F
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KeypadLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>KeypadLineEdit.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

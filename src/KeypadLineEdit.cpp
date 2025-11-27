@@ -13,6 +13,8 @@ void KeypadLineEdit::mousePressEvent(QMouseEvent *event)
     NumPadDialog dlg;
     dlg.setModal(true);
 
+    dlg.exec();
+
 //    if (dlg.exec() == QDialog::Accepted) {
 //        setText(dlg.getText());
 //    }

@@ -1,5 +1,6 @@
 #include "FisrtScreen.h"
 #include "ui_FisrtScreen.h"
+#include <QTimer>
 
 FisrtScreen::FisrtScreen(QWidget *parent) :
     QFrame(parent),
@@ -10,9 +11,21 @@ FisrtScreen::FisrtScreen(QWidget *parent) :
     ui->frame_MainImage->setObjectName("Image_First_Screen");
     ui->frame_MainImage->setStyleSheet("");
     ui->frame_MainImage->setFixedSize(972, 688);
+
+    connect(ui->pushButton_3, &QPushButton::clicked,
+            this, &FisrtScreen::onPushButtonPoroschokClicked);
 }
 
 FisrtScreen::~FisrtScreen()
 {
     delete ui;
+}
+
+void FisrtScreen::onPushButtonPoroschokClicked()
+{
+    emit signalPushButtonPoroschokClicked();
+
+    QTimer::singleShot(15000, [=](){
+        emit signalPushButtonPoroschokStop();
+    });
 }

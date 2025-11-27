@@ -10,6 +10,8 @@ FrameBottom::FrameBottom(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->icon_loading->hide();
+
     connect(ui->button_stop_motors, &QPushButton::clicked,
             this, &FrameBottom::OnButtomStopMotorsClicked);
 
@@ -26,6 +28,16 @@ FrameBottom::FrameBottom(QWidget *parent) :
 FrameBottom::~FrameBottom()
 {
     delete ui;
+}
+
+void FrameBottom::showloading()
+{
+    ui->icon_loading->show();
+}
+
+void FrameBottom::stoploading()
+{
+    ui->icon_loading->hide();
 }
 
 void FrameBottom::OnButtomStopMotorsClicked(bool _state)

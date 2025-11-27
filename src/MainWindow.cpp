@@ -10,6 +10,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     ui->frame_header_2->setFixedSize(1922, 76);
+
+    connect(ui->frame_firstScreen, &FisrtScreen::signalPushButtonPoroschokClicked,
+            ui->frame_buttom, &FrameBottom::showloading);
+    connect(ui->frame_firstScreen, &FisrtScreen::signalPushButtonPoroschokStop,
+            ui->frame_buttom, &FrameBottom::stoploading);
 }
 
 MainWindow::~MainWindow()

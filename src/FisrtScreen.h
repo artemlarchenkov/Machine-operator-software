@@ -14,9 +14,13 @@ class FisrtScreen : public QFrame
 public:
     explicit FisrtScreen(QWidget *parent = 0);
     ~FisrtScreen();
-
+signals:
+    void signalPushButtonPoroschokClicked();
+    void signalPushButtonPoroschokStop();
 private:
     Ui::FisrtScreen *ui;
+private slots:
+    void onPushButtonPoroschokClicked();
 };
 
 #endif // FISRTSCREEN_H

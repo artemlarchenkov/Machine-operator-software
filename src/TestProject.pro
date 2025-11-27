@@ -29,26 +29,26 @@ SOURCES += \
     FisrtScreen.cpp \
     FrameHeader.cpp \
     FrameBottom.cpp \
-    DigitalKeyboard.cpp \
     KeypadLineEdit.cpp \
-    NumPadDialog.cpp
+    NumPadDialog.cpp \
+    CustomDialog.cpp
 
 HEADERS += \
         MainWindow.h \
     FisrtScreen.h \
     FrameHeader.h \
     FrameBottom.h \
-    DigitalKeyboard.h \
     KeypadLineEdit.h \
-    NumPadDialog.h
+    NumPadDialog.h \
+    CustomDialog.h
 
 FORMS += \
         MainWindow.ui \
     FisrtScreen.ui \
     FrameHeader.ui \
     FrameBottom.ui \
-    DigitalKeyboard.ui \
-    NumPadDialog.ui
+    NumPadDialog.ui \
+    CustomDialog.ui
 
 DISTFILES += \
     styles/AllFrames.css

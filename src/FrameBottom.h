@@ -14,6 +14,9 @@ class FrameBottom : public QFrame
 public:
     explicit FrameBottom(QWidget *parent = 0);
     ~FrameBottom();
+public slots:
+    void showloading();
+    void stoploading();
 private slots:
     void OnButtomStopMotorsClicked(bool _state);
     void OnButtonDoorClicked(bool _state);
