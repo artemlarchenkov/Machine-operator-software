@@ -47,8 +47,22 @@ QFrame#frame_buttom QPushButton{
 QFrame#frame_buttom QPushButton[hover="true"]{
     background-color: #E6E7EC;
     color: #4D505F;
+    border: 2px solid #E6E7EC;
 }
-QFrame#frame_buttom QPushButton#button_stop_motors{
+QFrame#frame_buttom QPushButton[hover="false"]{
+    background-color: Black;
+    color: #CDD1D9;
+    border: 2px solid #CDD1D9;
+}
+
+QFrame#frame_buttom QPushButton#button_stop_motors[hover="false"]{
     background-color: #8B66E8;
     color: white;
+    border: 2px solid #8B66E8;
+}
+
+QFrame#frame_buttom QPushButton#button_stop_motors[hover="true"]{
+    background-color: #DDD2F9;
+    border: 2px solid #DDD2F9;
+    color: #4D505F;
 }

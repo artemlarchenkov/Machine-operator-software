@@ -40,7 +40,7 @@ void FisrtScreen::onBtnUpClicked()
     bool ok;
 
     double step = ui->step->text().toDouble(&ok);
-    if(!ok || step <= 0.0) step = 0.01;
+    if(!ok || step <= 0.0) step = 0.00;
 
     double value = ui->label_abs_->text().toDouble(&ok);
     if (!ok) value = 0.0;
@@ -54,7 +54,7 @@ void FisrtScreen::onBtnDownClicked()
     bool ok;
 
     double step = ui->step->text().toDouble(&ok);
-    if(!ok || step <= 0.0) step = 0.01;
+    if(!ok || step <= 0.0) step = 0.00;
 
     double value = ui->label_abs_->text().toDouble(&ok);
     if (!ok) value = 0.0;
