@@ -66,3 +66,20 @@ QFrame#frame_buttom QPushButton#button_stop_motors[hover="true"]{
     border: 2px solid #DDD2F9;
     color: #4D505F;
 }
+QPushButton#pushButton_poroshok{
+background-color: #DDD2F9;
+border: 2px solid #DDD2F9;
+color: #4D505F;
+}
+
+QPushButton#pushButton_poroshok[hover="false"]{
+background-color: #DDD2F9;
+border: 2px solid #DDD2F9;
+color: #4D505F;
+}
+
+QPushButton#pushButton_poroshok[hover="true"]{
+background-color: #DDD2F9;
+border: 2px solid #DDD2F9;
+color: #4D505F;
+}

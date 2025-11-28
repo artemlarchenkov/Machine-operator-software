@@ -27,13 +27,31 @@
     </item>
     <item row="2" column="0" colspan="3">
      <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color:  #343640;</string>
+       <string notr="true">QWidget {
+	background-color:  #343640;
+}
+QTabWidget:pane {
+color: white;
+	border: 1px solid gray;
+}
+QTabBar:tab {
+color: white;
+	border: 1px solid gray;
+}</string>
       </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <attribute name="title">
         <string>Оси и перемещения</string>
        </attribute>

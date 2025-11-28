@@ -19,6 +19,7 @@ signals:
     void signalPushButtonPoroschokStop();
 private:
     Ui::FisrtScreen *ui;
+    void updateButtonStyle();
 private slots:
     void onPushButtonPoroschokClicked();
     void onBtnUpClicked();
