@@ -21,6 +21,8 @@ private:
     Ui::FisrtScreen *ui;
 private slots:
     void onPushButtonPoroschokClicked();
+    void onBtnUpClicked();
+    void onBtnDownClicked();
 };
 
 #endif // FISRTSCREEN_H

@@ -14,7 +14,11 @@ FisrtScreen::FisrtScreen(QWidget *parent) :
 
     connect(ui->pushButton_3, &QPushButton::clicked,
             this, &FisrtScreen::onPushButtonPoroschokClicked);
-//    connect(ui->botton_up, &Q)
+
+    connect(ui->pushButton_up, &QPushButton::clicked,
+            this, &FisrtScreen::onBtnUpClicked);
+    connect(ui->pushButton_down, &QPushButton::clicked,
+            this, &FisrtScreen::onBtnDownClicked);
 }
 
 FisrtScreen::~FisrtScreen()
@@ -29,4 +33,32 @@ void FisrtScreen::onPushButtonPoroschokClicked()
     QTimer::singleShot(15000, [=](){
         emit signalPushButtonPoroschokStop();
     });
+}
+
+void FisrtScreen::onBtnUpClicked()
+{
+    bool ok;
+
+    double step = ui->step->text().toDouble(&ok);
+    if(!ok || step <= 0.0) step = 0.01;
+
+    double value = ui->label_abs_->text().toDouble(&ok);
+    if (!ok) value = 0.0;
+
+    value -= step;
+    ui->label_abs_->setText(QString::number(value, 'f', 3));
+}
+
+void FisrtScreen::onBtnDownClicked()
+{
+    bool ok;
+
+    double step = ui->step->text().toDouble(&ok);
+    if(!ok || step <= 0.0) step = 0.01;
+
+    double value = ui->label_abs_->text().toDouble(&ok);
+    if (!ok) value = 0.0;
+
+    value += step;
+    ui->label_abs_->setText(QString::number(value, 'f', 3));
 }
