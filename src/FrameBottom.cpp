@@ -43,30 +43,48 @@ void FrameBottom::stoploading()
 void FrameBottom::OnButtomStopMotorsClicked(bool _state)
 {
     Q_UNUSED(_state)
-    QTimer::singleShot(5000, [](){
-        CustomDialog dlg("Движение остановлено",
-                         "Движение моторов осей перемещения остановлены вручную");
-                dlg.exec();
+
+    ui->button_stop_motors->setProperty("hover", true);
+    ui->button_stop_motors->setStyleSheet("");
+
+    QTimer::singleShot(5000, [=](){
+        auto dlg = new CustomDialog("Движение остановлено",
+                                    "Движение моторов осей перемещения остановлены вручную");
+                dlg->exec();
+                connect(dlg, &CustomDialog::onpushButton_understandClicked,
+                        this, &FrameBottom::toDefaultButttons);
+                dlg->deleteLater();
+
     });
 }
 
 void FrameBottom::OnButtonDoorClicked(bool _state)
 {
     Q_UNUSED(_state)
-    QTimer::singleShot(5000,[](){
-        CustomDialog dlg("Дверь камеры",
+
+    ui->door_camera->setProperty("hover", true);
+    ui->door_camera->setStyleSheet("");
+
+    QTimer::singleShot(5000,[=](){
+        auto dlg = new CustomDialog("Дверь камеры",
                          "Дверь камеры открыта/закрыта");
-        dlg.exec();
+        dlg->exec();
+        dlg->deleteLater();
+
     });
 }
 
 void FrameBottom::OnButtonDoorPerchatkaClicked(bool _state)
 {
     Q_UNUSED(_state)
-    QTimer::singleShot(5000,[](){
-        CustomDialog dlg("Дверь перчатки",
+    ui->door_perchatka->setProperty("hover", true);
+    ui->door_perchatka->setStyleSheet("");
+    QTimer::singleShot(5000,[=](){
+        auto dlg = new CustomDialog("Дверь перчатки",
                          "Дверь перчатки открыта/закрыта");
-        dlg.exec();
+        dlg->exec();
+        dlg->deleteLater();
+
     });
 }
 
@@ -74,10 +92,28 @@ void FrameBottom::OnButtonDoorCameraClicked(bool _state)
 {
     Q_UNUSED(_state)
 
-    QTimer::singleShot(5000, [](){
-        CustomDialog dlg("Освещение камеры",
+    ui->door_camera->setProperty("hover", true);
+    ui->door_camera->setStyleSheet("");
+    QTimer::singleShot(5000, [=](){
+        auto dlg = new CustomDialog("Освещение камеры",
                          "Освещение камеры включено/выключено");
-        dlg.exec();
+        dlg->exec();
+        dlg->deleteLater();
     });
+}
+
+void FrameBottom::toDefaultButttons()
+{
+    ui->door_camera->setProperty("hover", false);
+    ui->door_camera->setStyleSheet("");
+
+    ui->door_perchatka->setProperty("hover", false);
+    ui->door_perchatka->setStyleSheet("");
+
+    ui->door_camera->setProperty("hover", false);
+    ui->door_camera->setStyleSheet("");
+
+    ui->button_stop_motors->setProperty("hover", false);
+    ui->button_stop_motors->setStyleSheet("");
 }
 

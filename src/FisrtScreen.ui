@@ -224,7 +224,7 @@
              <number>0</number>
             </property>
             <item row="0" column="0">
-             <widget class="QFrame" name="frame_25">
+             <widget class="QFrame" name="botton_up">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -249,7 +249,7 @@
              </widget>
             </item>
             <item row="1" column="0">
-             <widget class="QFrame" name="frame_26">
+             <widget class="QFrame" name="button_down">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -805,7 +805,7 @@ background-color : #81869F
                       <number>0</number>
                      </property>
                      <item row="1" column="0">
-                      <widget class="QLineEdit" name="lineEdit_5">
+                      <widget class="KeypadLineEdit" name="lineEdit_5">
                        <property name="sizePolicy">
                         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                          <horstretch>0</horstretch>

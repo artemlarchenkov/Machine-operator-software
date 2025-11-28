@@ -15,6 +15,7 @@ CustomDialog::CustomDialog(const QString &title, const QString &message, QWidget
             this, &CustomDialog::onPushButtonUnderstandClicked);
 
     connect(ui->pushButton, &QPushButton::clicked, [=]() {
+        emit onpushButton_understandClicked();
         this->close();
     });
 }

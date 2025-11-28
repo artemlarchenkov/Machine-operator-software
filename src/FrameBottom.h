@@ -2,6 +2,7 @@
 #define FRAMEBOTTOM_H
 
 #include <QFrame>
+#include "CustomDialog.h"
 
 namespace Ui {
 class FrameBottom;
@@ -22,8 +23,10 @@ private slots:
     void OnButtonDoorClicked(bool _state);
     void OnButtonDoorPerchatkaClicked(bool _state);
     void OnButtonDoorCameraClicked(bool _state);
+    void toDefaultButttons();
 private:
     Ui::FrameBottom *ui;
+    CustomDialog* dlg;
 };
 
 #endif // FRAMEBOTTOM_H

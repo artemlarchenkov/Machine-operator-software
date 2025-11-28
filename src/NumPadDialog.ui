@@ -171,7 +171,7 @@ QPushBtton:pressed {
             <string/>
            </property>
            <property name="icon">
-            <iconset>
+            <iconset resource="source/resource.qrc">
              <normaloff>:/icon_close.png</normaloff>:/icon_close.png</iconset>
            </property>
           </widget>
@@ -282,7 +282,7 @@ QPushBtton:pressed {
                 <number>0</number>
                </property>
                <item row="0" column="0">
-                <widget class="QPushButton" name="pushButton_13">
+                <widget class="QPushButton" name="btn_okey">
                  <property name="minimumSize">
                   <size>
                    <width>143</width>
@@ -321,7 +321,7 @@ QPushButton:pressed {
                 </widget>
                </item>
                <item row="1" column="0">
-                <widget class="QPushButton" name="pushButton_14">
+                <widget class="QPushButton" name="btn_not__okey">
                  <property name="minimumSize">
                   <size>
                    <width>143</width>
@@ -367,7 +367,7 @@ QPushButton:pressed {
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QFrame" name="frame_5">
+          <widget class="QFrame" name="frame_buttons">
            <property name="minimumSize">
             <size>
              <width>185</width>
@@ -400,7 +400,7 @@ QPushButton:pressed {
              <number>0</number>
             </property>
             <item row="2" column="1">
-             <widget class="QPushButton" name="pushButton_17">
+             <widget class="QPushButton" name="btn_8">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -439,7 +439,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="1" column="0">
-             <widget class="QPushButton" name="pushButton_18">
+             <widget class="QPushButton" name="btn_4">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -478,7 +478,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="0" column="1">
-             <widget class="QPushButton" name="pushButton_19">
+             <widget class="QPushButton" name="btn_2">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -517,7 +517,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QPushButton" name="pushButton_20">
+             <widget class="QPushButton" name="btn_5">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -556,7 +556,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="0" column="2">
-             <widget class="QPushButton" name="pushButton_21">
+             <widget class="QPushButton" name="btn_3">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -595,7 +595,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="1" column="2">
-             <widget class="QPushButton" name="pushButton_22">
+             <widget class="QPushButton" name="btn_6">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -634,7 +634,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="2" column="0">
-             <widget class="QPushButton" name="pushButton_23">
+             <widget class="QPushButton" name="btn_7">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -673,7 +673,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="2" column="2">
-             <widget class="QPushButton" name="pushButton_24">
+             <widget class="QPushButton" name="btn_9">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -712,7 +712,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="0" column="0">
-             <widget class="QPushButton" name="pushButton_25">
+             <widget class="QPushButton" name="btn_1">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -751,7 +751,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="3" column="0">
-             <widget class="QPushButton" name="pushButton_26">
+             <widget class="QPushButton" name="btn_tochka">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -790,7 +790,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="3" column="1">
-             <widget class="QPushButton" name="pushButton_27">
+             <widget class="QPushButton" name="btn_0">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -829,7 +829,7 @@ QPushButton:pressed {
              </widget>
             </item>
             <item row="3" column="2">
-             <widget class="QPushButton" name="pushButton_28">
+             <widget class="QPushButton" name="button_delete_symbol">
               <property name="minimumSize">
                <size>
                 <width>56</width>
@@ -865,7 +865,7 @@ QPushButton:pressed {
                <string/>
               </property>
               <property name="icon">
-               <iconset>
+               <iconset resource="source/resource.qrc">
                 <normaloff>:/icon_Arrow_backspase.png</normaloff>:/icon_Arrow_backspase.png</iconset>
               </property>
               <property name="iconSize">
@@ -887,6 +887,10 @@ QPushButton:pressed {
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="source/resource.qrc"/>
+  <include location="source/resource.qrc"/>
+  <include location="source/resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

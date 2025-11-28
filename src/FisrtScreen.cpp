@@ -14,6 +14,7 @@ FisrtScreen::FisrtScreen(QWidget *parent) :
 
     connect(ui->pushButton_3, &QPushButton::clicked,
             this, &FisrtScreen::onPushButtonPoroschokClicked);
+//    connect(ui->botton_up, &Q)
 }
 
 FisrtScreen::~FisrtScreen()

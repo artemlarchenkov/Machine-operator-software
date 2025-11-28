@@ -16,6 +16,8 @@ public:
                           const QString &message,
                           QWidget *parent = nullptr);
     ~CustomDialog();
+signals:
+    void onpushButton_understandClicked();
 private slots:
     void onPushButtonUnderstandClicked();
 private:
