@@ -1,13 +1,13 @@
 /* Общий цвет фона MainWindow*/
 QWidget#MainWindow
 {
-    background-color: Black;
+    background-color: #1A1B20;
     color: White;
     font: Terminus;
 }
 QFrame#frame_header{
     color: White;
-    background-color:  Black;
+    background-color:  #1A1B20;
 }
 
 QFrame#frame_header_2{
@@ -15,11 +15,11 @@ QFrame#frame_header_2{
 }
 
 QLabel#label_header {
-    background-color: Black;
+    background-color: #1A1B20;
     color: White;
 }
 QFrame#frame_info {
-    background-image: url(:/info-circle-i.png) no-repeat center center fixed;
+    background-image: url(:/info-circle-ii.png) no-repeat center center fixed;
 }
 QFrame#frame_image3 {
     background-image: url(:/main_s2.png) no-repeat center center fixed;
@@ -41,7 +41,7 @@ QFrame#frame_buttom QLabel{
 }
 
 QFrame#frame_buttom QPushButton{
-    background-color: Black;
+    background-color: #1A1B20;
     color: white;
 }
 QFrame#frame_buttom QPushButton[hover="true"]{
@@ -50,14 +50,14 @@ QFrame#frame_buttom QPushButton[hover="true"]{
     border: 2px solid #E6E7EC;
 }
 QFrame#frame_buttom QPushButton[hover="false"]{
-    background-color: Black;
+    background-color: #1A1B20;
     color: #CDD1D9;
     border: 2px solid #CDD1D9;
 }
 
 QFrame#frame_buttom QPushButton#button_stop_motors[hover="false"]{
     background-color: #8B66E8;
-    color: white;
+    color: #FFFFFF;
     border: 2px solid #8B66E8;
 }
 

@@ -30,5 +30,6 @@
         <file>info-circle-ii.png</file>
         <file>icon arrow double (1).png</file>
         <file>icon arrow double.png</file>
+        <file>icon_lock_pressed.png</file>
     </qresource>
 </RCC>

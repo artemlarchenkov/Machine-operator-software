@@ -18,9 +18,11 @@ FrameBottom::FrameBottom(QWidget *parent) :
 
     ui->door_camera->setProperty("hover", false);
     ui->door_camera->setStyleSheet("");
+    ui->door_camera->setIcon(QIcon(":/lock.png"));
 
     ui->door_perchatka->setProperty("hover", false);
     ui->door_perchatka->setStyleSheet("");
+    ui->door_perchatka->setIcon(QIcon(":/lock.png"));
 
     ui->camera_light->setProperty("hover", false);
     ui->camera_light->setStyleSheet("");
@@ -81,6 +83,7 @@ void FrameBottom::OnButtonDoorClicked(bool _state)
 
     ui->door_camera->setProperty("hover", true);
     ui->door_camera->setStyleSheet("");
+    ui->door_camera->setIcon(QIcon(":/icon_lock_pressed.png"));
 
     QTimer::singleShot(5000,this,[this](){
         auto dlg = new CustomDialog("Дверь камеры",
@@ -101,6 +104,8 @@ void FrameBottom::OnButtonDoorPerchatkaClicked(bool _state)
     Q_UNUSED(_state)
     ui->door_perchatka->setProperty("hover", true);
     ui->door_perchatka->setStyleSheet("");
+    ui->door_perchatka->setIcon(QIcon(":/icon_lock_pressed.png"));
+
     QTimer::singleShot(5000,this, [this](){
         auto dlg = new CustomDialog("Дверь перчатки",
                          "Дверь перчатки открыта/закрыта");
