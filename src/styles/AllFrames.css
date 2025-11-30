@@ -1,0 +1,86 @@
+/* Общий цвет фона MainWindow*/
+QWidget#MainWindow
+{
+    background-color: Black;
+    color: White;
+    font: Terminus;
+}
+QFrame#frame_header{
+    color: White;
+    background-color: Black;
+}
+
+QFrame#frame_header_2{
+    background-image: url(:/Frame_header2.png) no-repeat center center fixed;
+}
+
+/*QFrame#frame_firstScreen{
+    color: White;
+    background-color: #F5F5F5;
+}*/
+
+QLabel#label_header {
+    background-color: Black;
+    color: White;
+}
+QFrame#frame_info {
+    background-image: url(:/info-circle-i.png) no-repeat center center fixed;
+}
+QFrame#frame_image3 {
+    background-image: url(:/main_s2.png) no-repeat center center fixed;
+}
+QFrame#Image_First_Screen {
+    background-image: url(:/image_13.png) no-repeat center center fixed;
+}
+
+QFrame#frame_buttom{
+    color: white;
+}
+
+QFrame#frame_buttom QLabel{
+    color: white;
+}
+
+QFrame#frame_buttom QLabel{
+    color: white;
+}
+
+QFrame#frame_buttom QPushButton{
+    background-color: Black;
+    color: white;
+}
+
+QFrame#frame_buttom QPushButton#button_stop_motors{
+    background-color: #8B66E8;
+    color: white;
+}
+
+/*QFrame#frameLabelAP[hover="false"]{
+    background-color: #3c4151;
+    border: #3c4151;
+    color: #3c4151;
+    font: Terminus;
+}
+QFrame#frameLabelAP[hover="true"]{
+    border: 1px solid #D3D3D3;
+    background-color: #D3D3D3;
+    color: #D3D3D3;
+    font-family: Terminus;
+}*/
+/*QMainWindow#frame_MainWindow{
+    border: #D3D3D3;
+    background-color: #D3D3D3;
+}
+
+QFrame#frameLabelAP[hover="false"]{
+    background-color: #3c4151;
+    border: #3c4151;
+    color: #3c4151;
+    font: Terminus;
+}
+QFrame#frameLabelAP[hover="true"]{
+    border: 1px solid #D3D3D3;
+    background-color: #D3D3D3;
+    color: #D3D3D3;
+    font-family: Terminus;
+}*/
