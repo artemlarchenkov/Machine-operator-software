@@ -1273,7 +1273,7 @@ background-color : #81869F
          <property name="spacing">
           <number>0</number>
          </property>
-         <item row="2" column="0">
+         <item row="2" column="1">
           <widget class="QFrame" name="frame_6">
            <property name="minimumSize">
             <size>
@@ -1699,7 +1699,7 @@ background-color : #81869F
            </layout>
           </widget>
          </item>
-         <item row="1" column="0">
+         <item row="1" column="1">
           <widget class="QFrame" name="frame_3">
            <property name="maximumSize">
             <size>
@@ -2223,7 +2223,7 @@ QPushButton:pressed {
            </layout>
           </widget>
          </item>
-         <item row="0" column="0">
+         <item row="0" column="1">
           <widget class="QFrame" name="frame_2">
            <property name="minimumSize">
             <size>
@@ -2785,6 +2785,22 @@ color: rgb(255, 255, 255);</string>
            </layout>
           </widget>
          </item>
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>10</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
         </layout>
        </widget>
       </item>
@@ -2801,6 +2817,7 @@ color: rgb(255, 255, 255);</string>
   </customwidget>
  </customwidgets>
  <resources>
+  <include location="source/resource.qrc"/>
   <include location="source/resource.qrc"/>
   <include location="source/resource.qrc"/>
  </resources>

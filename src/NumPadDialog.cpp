@@ -1,6 +1,7 @@
 #include "NumPadDialog.h"
 #include "ui_NumPadDialog.h"
 #include <QDebug>
+#include <QRegularExpression>
 
 NumPadDialog::NumPadDialog(QWidget *parent) :
     QDialog(parent),
